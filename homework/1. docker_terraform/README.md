@@ -8,7 +8,7 @@ docker run -it --entrypoint bash python:3.13
 pip --version
 ```
 
-**Answer:** `24.3.1`
+**Answer:** `25.3`
 
 ---
 
@@ -17,10 +17,10 @@ pip --version
 In Docker Compose, services communicate using the **service name** as hostname and the **internal port** (not the mapped host port).
 
 From the given docker-compose.yaml:
-- Service name: `db`  
+- Service name: `db` (or container name: `postgres`)
 - Internal PostgreSQL port: `5432`
 
-**Answer:** `db:5432`
+**Answer:** `postgres:5432` / `db:5432`
 
 ---
 
@@ -106,7 +106,7 @@ ORDER BY max_tip DESC
 LIMIT 1;
 ```
 
-**Answer:** `JFK Airport`
+**Answer:** `Yorkville West`
 
 ---
 
@@ -126,10 +126,10 @@ Based on [Terraform Overview](https://github.com/DataTalksClub/data-engineering-
 
 | Question | Answer |
 |----------|--------|
-| Q1 | 24.3.1 |
-| Q2 | db:5432 |
+| Q1 | 25.3 |
+| Q2 | postgres:5432 / db:5432 |
 | Q3 | 8,007 |
 | Q4 | 2025-11-14 |
 | Q5 | East Harlem North |
-| Q6 | JFK Airport |
+| Q6 | Yorkville West |
 | Q7 | terraform init, terraform apply -auto-approve, terraform destroy |
