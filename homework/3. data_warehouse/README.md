@@ -152,7 +152,7 @@ SELECT COUNT(*)
 FROM `<project>.<dataset>.yellow_taxi_2024_materialized`;
 ```
 
-**Estimated bytes: 0 bytes.** BigQuery stores table metadata (including row counts) internally, so a `COUNT(*)` without any filter does not need to scan any actual data — it reads the count directly from metadata.
+**Estimated bytes: 0 bytes.** BigQuery stores table metadata (including row counts) internally, so a `COUNT(*)` without any filter does not need to scan any actual data because it reads the count directly from metadata.
 
 ---
 
